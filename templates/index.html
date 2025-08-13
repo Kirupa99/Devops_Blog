@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>My Application</title>
+</head>
+<body>
+    <header>
+        <h1>From Images to Containers: The Docker Engine Driving DevOps</h1>
+        <div class="author-profile">
+        <img src="{{ url_for('static', filename='profile.jpeg') }}" alt="Kirupa Vasini" class="profile-pic" />
+        <div class="author-info">
+            <p><strong><a href="https://www.linkedin.com/in/kirupa-vasini/" target="_blank" rel="noopener noreferrer">Kirupa Vasini Ilango</a></strong></p>
+        </div>
+    </div>
+
+    <p><em>Published: August 2025</em></p>
+    </header>
+    <article>
+        <section id="reaction-section">
+            <button id="like-btn">👍 Like</button>
+            <p id="reaction-count">0 reactions</p>
+        </section>
+        <h2>From Images to Containers: The Docker Engine Driving DevOps</h2>
+        <p>Imagine you're running a food truck business. Before you head out each day, you need to prep your ingredients, pack your tools, and make sure everything is consistent no matter which city you’re visiting. Wouldn’t it be great if there was a way to pre-package everything you need in one neat box, ready to go every single time?</p>
+        <p>This is where Docker comes in, only instead of food trucks, we’re talking about applications. Docker helps developers package everything their app needs (code, tools, libraries, settings) into something called an <strong>image</strong>. Think of an image like your fully stocked and prepped food box.</p>
+        <p>When it's time to "serve" the app, Docker spins up a <strong>container</strong> from that image. This container runs your app in a neat, isolated space, like your food truck rolling out and serving meals exactly the same way, no matter the location.</p>
+        <p>Why does this matter in DevOps? Because containers ensure your app behaves the same on every machine, from development to production. No more "but it worked on my machine!" headaches.</p>
+        <p>In this blog series, we’ll unpack how Docker helps in DevOps pipelines, what images and containers really are, and how you can get started, even if you’re brand new to it all.</p>
+        <h2>Understanding Docker Images: Your App’s Blueprint</h2>
+        <p>Think of a Docker image as a recipe card. It contains all the instructions to create a container, the actual running instance of your application. Each image is built step-by-step with layers, kind of like building a sandwich layer by layer. When you update your app, Docker only needs to update the changed layers, making everything fast and efficient.</p>
+        <h2>What Happens Inside a Container?</h2>
+        <p>A container is like your food truck on the move. It isolates your application and its environment, ensuring everything it needs is included. This isolation means your app won’t get messed up by other software on the same machine, and it can run anywhere, on your laptop, on a cloud server, or even on a colleague’s computer, without changes.</p>
+        <h2>Docker in DevOps Pipelines: Why It’s a Game-Changer</h2>
+        <p>In DevOps, speed and consistency are key. Docker allows developers and operations teams to work with the exact same environments. This means code moves smoothly from development to testing to production without surprises. Automated pipelines can build, test, and deploy containers quickly, helping teams release software faster and more reliably.</p>
+        <h2>Getting Started With Docker</h2>
+        <p>Ready to give Docker a try? First, you’ll need to install Docker on your machine. Once installed, you can pull existing images from Docker Hub, the big marketplace for ready-to-use images, or create your own. In the next posts, we’ll guide you through installing Docker and running your first container step-by-step.</p>
+    </article>
+    <script src="{{ url_for('static', filename='reaction.js') }}"></script>
+</body>
+</html>

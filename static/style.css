@@ -1,0 +1,102 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 20px 40px;
+  line-height: 1.6;
+}
+
+header {
+  border-bottom: 2px solid #007acc;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+header h1 {
+    color: #007acc;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+header p {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+article h2 {
+    color: #005a9e;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #cce4f7;
+    padding-bottom: 6px;
+}
+
+article p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+em {
+    font-style: italic;
+    color: #666;
+}
+
+strong {
+    color: #007acc;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+}
+
+.author-profile {
+    display: flex;              /* Arrange image and text side by side */
+    align-items: center;        /* Vertically center items */
+    margin-top: 10px;           /* Space above profile */
+    margin-bottom: 10px;        /* Space below profile */
+}
+
+.profile-pic {
+    width: 60px;                /* Set width */
+    height: 60px;               /* Set height */
+    border-radius: 50%;         /* Make image perfectly round */
+    object-fit: cover;          /* Crop/resize image to fill the circle nicely */
+    margin-right: 15px;         /* Space between image and text */
+    border: 2px solid #007acc;  /* Blue border around picture */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+
+.author-info p {
+    margin: 2px 0;              /* Small vertical spacing between lines */
+    color: #444;                /* Dark gray text */
+    font-size: 1rem;            /* Readable font size */
+}
+
+.author-info a {
+    color: #007acc;           /* Match your blue theme */
+    text-decoration: none;    /* Remove underline */
+    font-weight: bold;
+}
+
+.author-info a:hover {
+    text-decoration: underline;  /* Underline on hover for clarity */
+    color: #005a9e;               /* Darker blue on hover */
+}
+
+/*# sourceMappingURL=style.css.map */
